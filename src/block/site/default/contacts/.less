@@ -1,0 +1,131 @@
+.kontakty-panel__{
+	&block{	
+		position: relative;
+	}
+	&panel{
+		padding: 30px 15px;
+		@media @media-point-screen-lg {
+			position: absolute;
+			z-index: 2;
+			background-color: @white;
+			top: 30px;
+			left: 7.5%;
+			max-width: 550px;
+			width: 29vw;
+			padding: 3.2vw 3.2vw 3.2vw 1.2vw;	
+			box-shadow: 3px 4px 10px fadeout(@black, 85%);		
+		}
+	}
+	&panel-inner{
+		height: 200px;
+		@media @media-point-tablet {
+			height: 300px;
+		}
+		@media @media-point-screen-lg {
+			height: 405px;
+		}
+	}
+	&map{
+		width: 100%;
+		height: 300px;
+		@media @media-point-xs {
+			height: 250px;
+		}
+		@media @media-point-tablet {
+			height: 500px;
+		}
+		@media @media-point-screen {
+			max-height: 650px;
+			min-width: 500px;
+			height: 100vh;
+		}
+	}
+	&heading{
+		margin-bottom: 30px;
+		@media @media-point-screen {
+			margin-bottom: 1.5vw;
+		}
+		@media @media-point-screen-lg {
+			margin-left: 40px;
+		}
+	}
+}
+.kontakty-card__{
+	&card{
+		margin-bottom: 15px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&heading{
+		display: inline-block;
+		position: relative;
+		color: @b-color-a;
+		padding-left: 35px;
+		font-family: @b-ff-2;
+		font-weight: 700; 
+		padding-top: 5px;
+		padding-bottom: 5px;
+		@media @media-point-screen {
+			padding-left: 43px;
+		}
+	}
+	&icon{
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%) rotate(-90deg);
+		width: 26px;
+		height: 26px;
+		border: 3px solid @orange-light;
+		background: @b-color-a;
+		color: @b-color-h;
+		padding: 4px;
+		border-radius: 50%;
+		transition: @trs-site;
+		svg{display: block;}
+		@media @media-point-screen {
+			width: 32px;
+			height: 32px;
+			padding: 6px;	
+		}
+		.kontakty-card__heading[aria-expanded="true"] &{
+			transform: translateY(-50%) rotate(0deg);
+			color: @white;
+		}
+	}
+	&point-group{
+		padding-top: 12px;
+		padding-bottom: 15px;
+		padding-left: 35px;
+		@media @media-point-screen {
+			padding-left: 43px;
+		}
+	}
+	&point-item{
+		padding-left: 25px;
+		position: relative;
+		font-size: @b-fs - 4;
+		line-height: @b-lh - 6;
+		margin-bottom: 10px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&point-icon{
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&location{
+		width: 60px;
+		height: 60px;
+		svg{
+			display: block;			
+			transform: translate(-30px, -60px);
+		}
+	}
+}

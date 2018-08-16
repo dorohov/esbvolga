@@ -1,0 +1,45 @@
+<header class="{{block_prefix}}block">
+	<div class="{{block_prefix}}row">
+		<div class="{{block_prefix}}cols  is--panel">
+			<div class="{{block_prefix}}panel">
+				<div class="{{block_prefix}}elem">
+					[[azbntple 
+						tpl="/src/block/site/default/button/link.html"
+						button_prefix="btn-link__" 
+						button_mod="is--lg"
+						button_link="##"
+						button_name="Личный кабинет" 
+					]]
+				</div>
+				<div class="{{block_prefix}}elem">
+					[[azbntple 
+						tpl="/src/block/site/default/button/link.html"
+						button_prefix="btn-link__" 
+						button_mod="is--lg"
+						button_link="{{page.testimony}}"
+						button_name="Передать показания" 
+					]]
+				</div>
+				<div class="{{block_prefix}}elem">
+					[[azbntple 
+						tpl="/src/block/site/default/button/link.html"
+						button_prefix="btn-link__" 
+						button_mod="is--lg"
+						button_link="{{page.pay}}"
+						button_name="Оплатить счет" 
+					]]
+				</div>
+			</div>
+		</div>
+		<div class="{{block_prefix}}cols  is--slider">
+			<div class="{{block_prefix}}slider" data-slider-slick="slick-header">
+				<div class="{{block_prefix}}slider-item">
+					<img src="{{url-path-img}}/temp/index-header-banner-item1.jpg" class="img-responsive" alt="">
+				</div>
+				<div class="{{block_prefix}}slider-item">
+					<img src="{{url-path-img}}/temp/index-header-banner-item2.jpg" class="img-responsive" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

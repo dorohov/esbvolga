@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body> 
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/.html"
+			class="navbar-site scroll"
+			navbar_prefix="navbar__"
+			navbar_mod="  "
+			navbar_ver_active="is--active"
+			navbar_ver_active_legal="  "
+		]] 
+		[[azbntple 
+			tpl="/src/block/site/default/header/panel.html"
+			block_prefix="header-block__"
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-news.html"
+			content_prefix="content-block__"  
+			content_mod="is--news-index"
+			content_id="news-block"
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading="Новости"
+		]]	
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/footer.html"
+			class="navbar-site scroll"
+			block_prefix="navbar-footer__"
+		]] 	
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html"
+			footer_prefix="footer__" 
+		]]		
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+		[[azbntple tpl="/src/block/site/default/modals/include.html" ]]
+	</body>
+</html>

@@ -1,0 +1,126 @@
+<form action="#" class="{{form_prefix}}block  {{form_mod}}"  >
+	<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
+	<input type="hidden" name="f[Форма: {{form_heading}}]">
+	<div class="{{form_prefix}}inner  {{form_mod}}"  >
+		<div class="row {{form_prefix}}row  {{form_mod}}  is--wrap">
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--name">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-input-custom.html"
+					form_id="{{form_id}}"
+					block_id="name"
+					block_prefix="{{form_prefix}}"
+					block_mod="{{form_mod}}"
+					block_mod_elem="is--name"
+					block_color="{{form_color}}"
+					block_type="text"
+					block_attr="  "
+					block_required="required"
+					block_required_custom="onlyLetterSp"
+					block_label="ФИО"
+					block_placeholder="ФИО"
+				]]
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--tel">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-input-custom.html"
+					form_id="{{form_id}}"
+					block_id="tel"
+					block_prefix="{{form_prefix}}"
+					block_mod="{{form_mod}}"
+					block_mod_elem="is--tel"
+					block_color="{{form_color}}"
+					block_type="tel"
+					block_attr="  "
+					block_required="required"
+					block_required_custom="phone"
+					block_label="Номер телефона для связи"
+					block_placeholder="Номер телефона для связи"
+				]]
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--email">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-input-custom.html"
+					form_id="{{form_id}}"
+					block_id="email"
+					block_prefix="{{form_prefix}}"
+					block_mod="{{form_mod}}"
+					block_mod_elem="is--email"
+					block_color="{{form_color}}"
+					block_type="email"
+					block_attr="  "
+					block_required="required"
+					block_required_custom="email"
+					block_label="Email"
+					block_placeholder="Email"
+				]]
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--textarea">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-textarea.html"
+					form_id="{{form_id}}"
+					block_id="comments"
+					block_prefix="{{form_prefix}}"
+					block_mod="{{form_mod}}"
+					block_mod_elem="is--textarea  is--sm"
+					block_color="{{form_color}}"
+					block_attr="  "
+					block_required="required"
+					block_required_custom="  "
+					block_label="Ваш запрос"
+					block_placeholder="Ваш запрос"
+				]]
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--agreement">
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-switch.html"
+					form_id="{{form_id}}"
+					block_id="subscrabe"
+					block_prefix="{{form_prefix}}"
+					block_mod="{{form_mod}}"
+					block_mod_elem="  "
+					block_color="{{form_color}}"
+					block_attr="  "
+					block_required="  "
+					block_label="Согласие на рассылку новостей"
+					block_text="Подписаться на рассылку новостей"
+				]]	
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-switch.html"
+					form_id="{{form_id}}"
+					block_id="agreement"
+					block_prefix="{{form_prefix}}"
+					block_mod="{{form_mod}}"
+					block_mod_elem="  "
+					block_color="{{form_color}}"
+					block_attr="checked"
+					block_required="required"
+					block_label="Согласие на обработку персональных данных"
+					block_text="Я согласен на обработку <a href='{{page.agreement}}' target='_blank'>персональных данных</a>"
+				]]	
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--docs">	
+				[[azbntple 
+					tpl="/src/block/site/default/form/elem-file.html"
+					form_id="{{form_id}}"
+					block_id="agreement"
+					block_prefix="{{form_prefix}}"
+					block_js="azbn__upload-btn"
+					block_mod="{{form_mod}}"
+					block_mod_elem="  "
+					block_color="{{form_color}}"
+					block_label="Прикрепить документ"
+					block_text="Прикрепить документ"
+				]]
+			</div>
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--btn  is--center">
+				[[azbntple 
+					tpl="/src/block/site/default/button/button.html"
+					button_prefix="btn__" 
+					button_mod="{{form_btn_mod}}"
+					button_type="submit"
+					button_name="{{form_btn_name}}"
+				]]				
+			</div>
+		</div>	
+	</div> 
+</form> 

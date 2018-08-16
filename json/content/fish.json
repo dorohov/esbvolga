@@ -1,0 +1,53 @@
+{
+	"contacts":{
+		"name":"Энергосбыт Волга",
+		"domain":"esbvolga.ru",
+		"domain_link":"http://www.esbvolga.ru/",
+		"color":"#F8902F",
+		"agreement_page":"agreement",
+		"copyright":"ООО «Энергосбыт Волга»",
+		"email":"info@esbvolga.ru",
+		"phone":" 8 (800) 234-72-76",  
+		"phone_tel":"88002347276",   
+		"clock":"<p>Пн-Пт: 8:00-17:00. Перерыв 13:00-14:00</p><p>Сб-Вс: выходной</p>", 
+		"address":"г. Владимир, ул. Разина, д. 21, 3 этаж"
+	},
+	"soc":{
+		"vk":"https://vk.com/",
+		"fb":"https://www.facebook.com/",
+		"ok":"https://ok.ru/group/",
+		"tw":"https://twitter.com/",
+		"inst":"https://www.instagram.com/"
+	},
+	"page":{
+		"index":"/",
+		"testimony":"/testimony.html",
+		"pay":"/pay.html",
+		"about":"/about.html",
+		"news":"/news.html",
+		"news_card":"/news-card.html",
+		"rates":"/rates.html",
+		"rates_legal":"/rates-legal.html",
+		"services":"/services.html",
+		"services_legal":"/services-legal.html",
+		"services_card":"/services-card.html",
+		"offices":"/offices.html",
+		"check":"/check.html",
+		"check_card":"/check-card.html",
+		"goodtoknow":"/goodtoknow.html",
+		"faq":"/faq.html",
+		"contacts":"/contacts.html",
+		"legal":"/legal.html",
+		"search":"/search.html",
+		"404":"/404.html",
+		"sitemap":"/sitemap.html",
+		"style":"/style.html",
+		"agreement":"/agreement.html"
+	},	                           
+	"url-path-css":"/css",
+	"url-path-img":"/img",
+	"url-path-js":"/js",
+	"url-path-plugins":"/plugins",
+	"url-path-favicon":"/favicon",
+	"url-path-docs":"/docs"
+}

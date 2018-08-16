@@ -1,0 +1,30 @@
+.bg-block__{
+	&card{		
+		position: absolute;
+		&.is--bg-page{		
+			z-index: 1;
+			bottom: 0%;
+			right: 0%;
+			max-width: 1768px;
+			max-height: 1927px;
+			width: 200vw;
+			height: 200vw;	
+			display: none;
+			@media @media-point-notsmart {
+				display: block;
+			}	
+		} 
+		svg{display: block;}
+	}
+	&inner{
+		position: absolute;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 100%;
+		height: 100%;
+		&.is--bg-page{	
+			background-position: bottom right;			
+		}		
+	}
+}

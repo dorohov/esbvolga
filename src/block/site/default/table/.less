@@ -1,0 +1,142 @@
+.table-block__{
+	&panel{
+	}
+	&heading{
+		margin-bottom: 25px;
+		@media @media-point-screen {margin-bottom: 1.55vw;} 
+	}
+	&heading-row{
+		justify-content: space-between;
+		align-items: center;
+	}
+	&heading-cols{
+		
+	}
+	&card{
+		margin-bottom: 35px;
+		@media @media-point-screen {
+			margin-bottom: 2.5vw;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&item{
+		padding-bottom: 25px;
+		@media @media-point-screen {
+			padding-bottom: 2.3vw;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}		
+	}
+}
+.table{ 
+	border: 0; 
+	font-size: @b-fs - 4;
+	line-height: @b-lh - 8;
+	margin-bottom: 0;
+	@media print{
+		* {color: @black}
+	}
+	.is--center{text-align: center;}
+	caption{
+		caption-side: bottom;
+	}			
+	thead{ 
+		td,
+		th{
+			border: 0;
+			border-left: 0;
+			background-color: @b-color;
+			color: @white;	
+			font-weight: 700;
+			padding: 11px 15px 14px;
+			letter-spacing: 0.5px;
+			font-size: @b-fs - 2;
+			line-height: @b-lh - 4;
+			font-family: @b-ff-2;
+			border-top: 0!important;
+			vertical-align: middle!important;
+			border: 1px solid fadeout(@white, 0%);	
+			text-align: center;
+			//border-bottom: none;
+			//letter-spacing: 1px;
+			//text-align: center;
+			//text-transform: uppercase;	
+			//border-right: 1px solid fadeout(@white, 50%);	
+			@media print{
+				font-size: @b-fs - 4;
+				line-height: @b-lh - 8;
+				border: none;
+			}
+			&:first-child{
+				//border-left: 0;
+				//padding-left: 0;
+				//text-align: left;
+			}
+			&:last-child{
+				//padding-right: 0;
+				//text-align: right;
+			}
+			small{
+				text-transform: none;
+				letter-spacing: 0;
+				font-weight: 300;
+			}
+		}
+	}
+	tbody {	
+		tr{			
+			th, td{
+				border: 1px solid @white-ec;
+				text-align: center;
+				&[colspan]{
+					background-color: @white-ff;
+					color: @b-color-h;
+				}
+			}
+			&:first-child{
+				th, td{
+					//border-top: 2px solid @green;
+					//@media print{border-top-color: @black}
+				}
+			}
+			&:last-child{
+				th, td{
+					border-bottom: 4px solid @blue-light;
+					@media print{border-bottom-color: @black}
+				}
+			}
+		}
+	}
+	td, th{
+		border: 0;
+		padding: 14px 15px 11px;
+		letter-spacing: 0.5px;
+		vertical-align: middle;
+		background-color: @white;
+		color: @b-color;
+		&.is--left{text-align: left;}
+		&.is--right{text-align: right;}
+		p, div{
+			margin: 0;
+		}
+	}	
+	&.is--lg{
+		thead {	
+			tr{			
+				th, td{
+					//padding: 10px 20px;
+				}
+			}
+		}
+		tbody {	
+			tr{			
+				th, td{
+					padding: 25px 10px;
+				}
+			}
+		}
+	}
+}

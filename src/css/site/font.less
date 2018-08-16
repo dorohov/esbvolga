@@ -1,0 +1,58 @@
+.include-custom-font(
+	@family: @helios, 
+	@src-name: @helios, 
+	@weight: normal, 
+	@style: normal
+	){
+	@font-face{			
+		font-family: "@{family}";			
+		src:	url('@{url-path-fonts}/@{src-name}.woff2') format('woff2'),
+				url('@{url-path-fonts}/@{src-name}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;		
+	}
+}
+.include-custom-icon(@family: @icon, @weight: normal, @style: normal){
+	@font-face{			
+		font-family: "@{family}";			
+		src: url('@{url-path-fonts}/@{family}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;		
+	}
+}
+.include-custom-font(
+	@family: @helios,
+	@src-name: @helios,
+	@weight: 400, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @helios,
+	@src-name: @helios-400i,
+	@weight: 400, 
+	@style: italic
+	);
+.include-custom-font(
+	@family: @helios,
+	@src-name: @helios-700,
+	@weight: 700, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @helios,
+	@src-name: @helios-700i,
+	@weight: 700, 
+	@style: italic
+	);
+.include-custom-font(
+	@family: @heliosCond,
+	@src-name: @heliosCond,
+	@weight: 400, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @heliosCond,
+	@src-name: @heliosCond-700,
+	@weight: 700, 
+	@style: normal
+	);

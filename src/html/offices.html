@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body>  
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/.html"
+			class="navbar-site scroll"
+			navbar_prefix="navbar__"   
+			navbar_mod="  "
+			navbar_ver_active="is--active"
+			navbar_ver_active_legal="  "
+		]]
+		[[azbntple  
+			tpl="/src/block/site/page/offices.html"
+			content_prefix="content-block__"       
+			content_mod="  " 
+			content_group_id="map-offices"   
+			block_heading_mod="is--page-heading"
+			block_heading_level="h1"
+			block_heading="Клиентские офисы"  
+			block_bread_mod="  "
+			block_bread_level_1_link="{{page.testimony}}"
+			block_bread_level_1="Передать показания"
+
+		]]	
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/footer.html"
+			class="navbar-site scroll"
+			block_prefix="navbar-footer__"
+		]] 
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html"
+			footer_prefix="footer__" 
+		]]
+		[[azbntple tpl="/src/block/site/default/script/YandexMap.html" ]]
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+	</body>
+</html>

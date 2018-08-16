@@ -1,0 +1,59 @@
+<main class="{{content_prefix}}panel  {{content_mod}}">
+	<div class="{{content_prefix}}container container  is--full">	
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/panel.html"
+			block_prefix="page-header__" 
+			block_mod="{{block_heading_mod}}"
+			block_heading_level="{{block_heading_level}}"
+			block_heading="{{block_heading}}"
+		]]	
+				
+		<div class="{{content_prefix}}row row  is--gutter  is--wrap  {{content_mod}}">
+			<div class="{{content_prefix}}cols cols  {{content_mod}}  is--page-left">		
+				<div class="{{content_prefix}}elem  is--xs  {{content_mod}}">		
+					[[azbntple 
+						tpl="/src/block/site/default/form/search.html"
+						block_prefix="form__"
+						block_mod="is--search-page"
+						block_placeholder="Поиск по сайту"
+					]]
+				</div>
+				<div class="{{content_prefix}}elem  {{content_mod}}">
+					<h4 class="{{content_prefix}}heading  {{content_mod}}">
+						Результаты поиска по запросу: «газ»
+					</h4>
+					<div class="{{content_prefix}}text  text__block  {{content_mod}}  is--search-page">
+						<ul>
+							<li><a href="#">Заявку на снятие контрольных показаний прибора учёта электроэнергии;</a></li>
+							<li><a href="#">Договор на установку, замену прибора учёта электроэнергии;</a></li>
+							<li><a href="#">Заявку на осуществление допуска прибора учёта электрической энергии в эксплуатацию;</a></li>
+							<li><a href="#">Рассрочку платеж</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="{{content_prefix}}cols cols  {{content_mod}}  is--page-right">
+				[[azbntple 
+					tpl="/src/block/site/default/form/panel-order.html" 
+					block_prefix="form-panel__"
+					block_mod="  "
+					form_prefix="form__"
+					form_id="f_search"
+					form_mod="  " 
+					form_color="  "
+					form_heading_mod="is--form-panel"
+					form_heading="Вы не нашли что искали?"
+					form_heading_small="Задайте вопрос в форме обратной связи"
+					form_btn_name="Отправить"
+					form_btn_mod="  "
+				]]					
+			</div>
+		</div>
+	</div>		
+	[[azbntple 
+		tpl="/src/block/site/default/bg/card.html"
+		block_prefix="bg-block__" 
+		block_mod="is--bg-page"
+		block_bg="bg-page.svg"
+	]]
+</main>

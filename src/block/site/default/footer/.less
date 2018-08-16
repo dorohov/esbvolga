@@ -1,0 +1,157 @@
+.footer__{
+	&block{
+		@media print{display: none;}
+		//position: relative;
+		//z-index: 1;
+		font-family: @footer-ff;
+		font-size: @footer-fs;
+		line-height: @footer-lh;
+		font-weight: 400;
+		color: @footer-color;	
+		background: @footer-bg;
+		overflow: hidden;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		@media @media-point-screen {
+			font-size: @footer-fs - 2;
+			line-height: @footer-lh - 2; 
+			padding-top: 45px;
+			padding-bottom: 45px;
+		}
+		a,
+		a[href^="tel:"],
+		a[href^="maito:"],
+		a:focus,
+		a[href^="tel:"]:focus,
+		a[href^="maito:"]:focus,
+		a:hover,
+		a[href^="tel:"]:hover,
+		a[href^="maito:"]:hover{
+			color: @footer-color;
+		}
+	}
+	&container{
+		@media @media-point-device-lg {
+			width: 100%;
+		}
+	}
+	&row{
+		//
+		align-items: center;
+		margin-top: -15px;
+		@media @media-point-device-lg{
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+	&cols{
+		padding-top: 15px;
+		@media @media-point-xxs {
+			//.makeCols(12, 12);
+		}
+		&.is--copyright{
+			display: none; 
+			@media @media-point-xxl {
+				display: block;
+				.makeCols(1.4, 12);
+			}
+		}
+		&.is--btn{
+			@media @media-point-xxs {
+				margin-bottom: 10px;
+			}
+			@media @media-point-screen-lg {				
+				.makeCols(2.4, 12);
+			}
+			@media @media-point-xxl {				
+				.makeCols(2, 12);
+			}
+		}
+		&.is--contacts{
+			@media @media-point-device-lg {
+				order: -1
+			}
+			@media @media-point-xs {
+				.makeCols(12, 12);
+			}
+			@media @media-point-tablet {
+				.makeCols(12, 12);
+			}
+			@media @media-point-md {
+				.makeCols(12, 12);
+			}
+			@media @media-point-screen-lg {				
+				.makeCols(6.6, 12);
+			}
+			@media @media-point-xxl {			
+				.makeCols(4.6, 12);
+			}
+		}
+		&.is--soc{
+			@media @media-point-screen-lg {				
+				.makeCols(2, 12);
+			}
+		}
+		&.is--dorohovdesign{
+			@media @media-point-device {
+				//.makeCols(6, 12);
+			}
+			@media @media-point-screen-lg {				
+				.makeCols(1.5, 12);
+				margin-left: auto;			
+			}
+			@media @media-point-xxl {	
+				.makeCols(2, 12);
+			}
+		}
+	}
+	&copyright{
+		display: block;
+		width: 9vw;
+		max-width: 163px;
+		height: 40px;
+	}
+	&dorohovdesign-row{
+		align-items: center;
+		margin-left: -5px;
+		margin-right: -5px;
+		@media @media-point-device {
+			flex-wrap: wrap;
+		}
+		@media @media-point-screen {
+			justify-content: flex-end;		  	
+		}  
+	}
+	&dorohovdesign-cols{
+		padding-left: 5px;
+		padding-right: 5px;
+		//@media @media-point-device {.makeCols(12, 12);}
+		&.is--text{
+			text-align: right;
+			display: none;		
+			@media @media-point-xxl {display: block;}
+		}
+	}
+	&dorohovdesign-text{
+		font-size: @b-fs - 4px;
+		line-height: @b-lh - 6px;    
+		margin-left: auto;
+		color: @b-color-a-hover;
+	}		
+	&dorohovdesign-logotip{	
+		border: none;
+		display: block;
+		width: 80px;
+		height: 32px;
+		//@media @media-point-xs {margin: 0 auto}
+		@media @media-point-notsmart {}
+		@media @media-point-screen {
+			width: 100px;
+			height: 36px;
+			margin:0 auto;
+		}
+		a&, a&:focus, a&:hover{
+			color: @b-color-a-hover;
+		}	
+	}
+}

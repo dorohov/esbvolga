@@ -1,0 +1,39 @@
+	/*.go-to-top {
+		position:fixed;
+		opacity:0;
+		z-index:-1;
+		top:120%;		
+		display:block;
+		text-decoration:none;		
+		transition:all 0.999s ease;
+		right:25px;
+		@media @media-size-xs{right:15px;}
+		&::after{
+			font-family: @icon;
+			content: @icon-arrow-left;
+			display: block;
+			width:50px;
+			line-height:50px;
+			font-size: 30px;
+			background-color: fadeout(@black, 60%);
+			color: @white;
+			transform: rotate(90deg);
+			text-align: center;
+			@media @media-size-xs{
+				width:32px;
+				line-height:32px;
+				font-size: 20px;				
+			}
+		}
+		&.active {
+			top:80%;
+			opacity:1;
+			z-index:15;	
+			@media @media-size-xs{right:15px;}
+			@media @media-size-sm{top: 75%;}		
+			&:hover {
+				transform:scale(1.2);
+				background-color: fadeout(@black, 40%);	
+			}
+		}
+	}*/
