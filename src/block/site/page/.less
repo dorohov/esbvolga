@@ -13,7 +13,11 @@
 			background-repeat: no-repeat;
 		}
 		&.is--news-index{
-			background-color: @white-ff;			
+			background-color: @white-ff;
+			@media @media-point-screen {
+				height: ~"calc(50vh - 140px)";
+				min-height:300px;
+			}			
 		}
 		&.is--404{			
 			background-position: center ;
@@ -91,8 +95,8 @@
 		//index
 		&.is--news-index{
 			@media @media-point-screen {
-				padding-top: 4.5vw;
-				padding-bottom: 5vw;
+				padding-top: 4vh;
+				padding-bottom: 3vh;
 			}
 		}
 	}
